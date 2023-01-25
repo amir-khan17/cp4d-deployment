@@ -67,7 +67,15 @@ The minimum requirement is 16 CPU X 64GB memory for each worker node on a Cloud 
 
 ![](images/aws-hardware-configuration.png)
 
-  
+**Plan your host systems**
+
+In each of the zones in your infrastructure provider, plan to create compatible hosts to add to Satellite. The host instances in your infrastructure provider become the compute hosts to create your location control plane or to run the services in your Satellite location, similar to the worker nodes in a Red Hat OpenShift cluster.
+Choose your operating system for your hosts, you can choose Red Hat Enterprise Linux 7 or 8. RHEL 7 operating system supported for Satellite hosts on Red Hat OpenShift version 4.9 or earlier and RHEL 8 is supported for Satellite hosts on Red Hat OpenShift version 4.9 or later and on infrastructure hosts. RHEL 8 is the recommended operating system.
+
+<img width="737" alt="image" src="https://user-images.githubusercontent.com/97834450/214557318-c0525232-4a57-4ab4-bd35-8b899fd0e52c.png">
+
+
+
 
 **Note**: You do not need to create Object storage as we will configure storage later.
 
